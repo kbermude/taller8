@@ -1,40 +1,49 @@
 package emsamablajecomputadoras.creacional;
 
 public class AsusZenbook extends ControladorComputadora {
-
+	public AsusZenbook() {
+		
+		computador = new Computador();
+		
+	}
+	
 	@Override
 	public void asignarMarca() {
-		// TODO Auto-generated method stub
+		computador.setMarca("Asus");
 		
 	}
 
 	@Override
 	public void asignarrModelo() {
-		// TODO Auto-generated method stub
+		computador.setModelo("Zenbook");
+		
 		
 	}
 
 	@Override
 	public void Almacenamiento() {
-		// TODO Auto-generated method stub
+		computador.setTipoAlmacenamiento("SSD");
+		computador.setAlmacenamiento(500);
 		
 	}
 
 	@Override
 	public void agregarRam() {
-		// TODO Auto-generated method stub
+		computador.setTipoRAM("DDR3");
+		computador.setRAM(16);
 		
 	}
 
 	@Override
 	public void Mainboard() {
-		// TODO Auto-generated method stub
+		
+		computador.setPlaca(new Mainboard("Prime", "Z370"));
 		
 	}
 
 	@Override
 	public void asignarSistemaOperativo() {
-		// TODO Auto-generated method stub
+		computador.setOS(new SistemaOperativo("Windows", 64, "10 Home"));
 		
 	}
 
